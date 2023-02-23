@@ -10,3 +10,11 @@ console.log(tenis); // Vai mostrar um Object, com as propriedades e valores inte
 console.log(tenis.cor); // Para verificar a propriedade do objeto
 console.log(tenis["cor"]); // Forma alternativa de poder visualizar a propriedade
 
+let usuario = {
+    nome: "Targino",
+    excluir: function () {
+        "O usuário, " + this.nome + " foi excluído!" // O this.nome é para referenciar o nome do escopo
+    }
+}
+
+usuario.excluir()
