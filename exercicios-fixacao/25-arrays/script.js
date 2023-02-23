@@ -30,7 +30,7 @@ let frutas = ["maca", "pera", "morango", "laranja"];
 
 frutas.forEach(function(item) {  // .forEach = Busca cada elemento do Array
     console.log("Fruta: " + item); 
-});  */
+});  
 
 let frutas = ["maca", "pera", "morango", "laranja"];
 
@@ -40,4 +40,20 @@ frutas.shift(); // .shift Remove o primeiro elemento do array
 frutas.unshift("pessego"); // .unshift Adiciona elementos no inicio do array
 
 let posicaoMorange = frutas.indexOf("morango");
-console.log(posicaoMorango);
+console.log(posicaoMorango); 
+
+let frutas = ["maca", "pera", "morango", "laranja"];
+
+let frutasExtraidas = frutas.slice([1, 3]); // Vai até o 3 mas não o exclui, slice recorta
+
+console.log(frutasExtraidas); // Aparece as frutas recortadas 
+
+console.log(frutas); // Aparece o array completo */
+
+let frutas = ["maca", "pera", "morango", "laranja"];
+
+let frutasExtraidas = frutas.splice([1,3]); // Aparece Pera, Morango e Laranja. O splice recorta permanentemente
+
+console.log(frutas); // Aparece somente a maca. Pois o splice recorta permanentemente.
+
+let removeEAdicionaFrutas = frutas.splice(1, "goiaba", "abacaxi"); // Remove a posição e insere na mesma.
