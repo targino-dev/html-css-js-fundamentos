@@ -3,7 +3,7 @@ function alterarCorDeFundoPrimeiroPost() {
 
     console.log(posts);
 
-    let primeiroPost = post[0]; // vai 
+    let primeiroPost = post[0]; // Seleciona o primeiro post
     console.log("primeiroPost", primeiroPost);
     primeiroPost.style.backgroundColor = "red";  // Para ativar o background, é necessario o camelcase!
 }
