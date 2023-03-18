@@ -7,10 +7,11 @@ function calcularPreco() {
 
     let Produto = nomeProduto.value; // Pega o valor do input nomeProduto
     let Preco = Number(precoProduto.value); // Pega o valor e transforma em numero
+    let Calculo = (Preco * 2) + (Preco / 2);
     // Obtém os campos e transforma em numeros
 
-    outPromocao.textContent = "Promoção de " + Produto;
-    outSaida.textContent = "Valor a pagar R$: " + valor.toFixed(2); // Coloca o valor e o campo adicional para moeda.
+    outPromocao.textContent = Produto + " - Promoção: Leve 3 por R$: " + Calculo.toFixed(2);
+    outSaida.textContent = "O 3º produto custa apenas R$: " + (Preco / 2).toFixed(2); // Coloca o valor e o campo adicional para moeda.
 
 }
 
